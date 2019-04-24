@@ -28,3 +28,5 @@ Unless otherwise noted supports should not be enabled.
 - [ ] VSAT (x12)
 - [x] RV (x10)
 - [x] Truck (x10)
+- [x] Radio Cache
+- [ ] sUAS
