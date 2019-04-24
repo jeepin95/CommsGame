@@ -56,6 +56,14 @@ CoverFaces = [
   [6,7,3,2],  // back
   [7,4,0,3]]; // left
 
+module wheels() {
+	translate([-2.5, 30, 0]) rotate([0,90,0]) cylinder(r=2, h=3);
+	translate([10, 30, 0]) rotate([0,90,0]) cylinder(r=2, h=3);
+
+	translate([-1, 4, 0]) rotate([0,90,0]) cylinder(r=2, h=3);
+	translate([8, 4, 0]) rotate([0,90,0]) cylinder(r=2, h=3);
+}
+
 module RV(includeAC) {
 
 	polyhedron( HoodPoints, HoodFaces );
@@ -63,12 +71,11 @@ module RV(includeAC) {
 	polyhedron(CoverPoints, CoverFaces);
 
 	$fn = 60;
-	translate([-2, 30, 0]) rotate([0,90,0]) cylinder(r=2, h=2);
-	translate([10, 30, 0]) rotate([0,90,0]) cylinder(r=2, h=2);
-
-	translate([0, 4, 0]) rotate([0,90,0]) cylinder(r=2, h=2);
-	translate([8, 4, 0]) rotate([0,90,0]) cylinder(r=2, h=2);
-
+    
+    difference() {
+        wheels();
+        translate([-5,0,-10]) cube([20,40,10]);
+    }
 	translate([0,8,0]) cube([10,5,10]);
 
 	translate([0,5,0]) {

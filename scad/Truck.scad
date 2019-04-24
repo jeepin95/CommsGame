@@ -82,8 +82,15 @@ difference() {
 }
 
 $fn = 60;
-translate([-1, 17, 0]) rotate([0,90,0]) cylinder(r=2, h=2);
-translate([13, 17, 0]) rotate([0,90,0]) cylinder(r=2, h=2);
+module wheels() {
+    translate([-1.5, 17, 0]) rotate([0,90,0]) cylinder(r=2, h=3);
+    translate([12.5, 17, 0]) rotate([0,90,0]) cylinder(r=2, h=3);
 
-translate([0, 4, 0]) rotate([0,90,0]) cylinder(r=2, h=2);
-translate([12, 4, 0]) rotate([0,90,0]) cylinder(r=2, h=2);
+    translate([-1, 4, 0]) rotate([0,90,0]) cylinder(r=2, h=3);
+    translate([12, 4, 0]) rotate([0,90,0]) cylinder(r=2, h=3);
+}
+
+difference() {
+    wheels();
+    translate([-4,0,-10]) cube([20,20,10]);
+}
