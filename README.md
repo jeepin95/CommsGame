@@ -1,7 +1,8 @@
 Pieces for the communications game that you can 3D print yourself. The pieces
 were created in OpenSCAD 2015.03-2 and have some variables for size mods.
 
-The list of pieces, if they are complete, and how many need to be printed:
+The list of pieces, if they are complete, and how many need to be printed.
+Unless otherwise noted supports should not be enabled.
 
 # Hex Pieces
 - [x] CELL - Cell Tower (x8)
@@ -19,11 +20,11 @@ The list of pieces, if they are complete, and how many need to be printed:
 # Resources
 - [x] BGAN (x15)
 - [x] COW (x10)
-- [ ] Satellite Phone (x30)
+- [x] Satellite Phone (x30) - May require supports
 - [ ] Helicopter (x2)
-- [ ] Microwave Tower (x5)
-- [ ] LMR Tower (x5)
-- [ ] Satellite Cellular on Light Truck (x5)
+- [x] Microwave Tower (x5)
+- [x] LMR Tower (x5)
+- [x] Satellite Cellular on Light Truck (x5)
 - [ ] VSAT (x12)
-- [ ] RV (x10)
-- [ ] Truck (x10)
+- [x] RV (x10)
+- [x] Truck (x10)
