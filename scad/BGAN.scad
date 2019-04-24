@@ -1,11 +1,11 @@
 
 bganX = 22;
 bganY = 14;
-bganZ = 1;
+bganZ = 1.5;
 keyX = 1.5;
 keyY = 1.5;
-keyZ = 0.5;
-keySpacing = 0.25;
+keyZ = 1;
+keySpacing = 0.35;
 keyStartingY = 4;
 
 startX = -8.8;
@@ -18,7 +18,7 @@ module keyRow() {
     }
 }
 cube([bganX,bganY,bganZ], true);
-translate([0,(bganY/2),(bganY/2)-bganZ*2]) {
+translate([0,(bganY/2),(bganY/2)-bganZ*1.5]) {
     rotate([65,0,0]) {
         cube([bganX,bganY*.75,bganZ], true);
     }
@@ -28,3 +28,4 @@ for(j=[1:5]) {
         keyRow();
     }
 }
+#translate([keyX/2-keySpacing,-3*(keyY+keySpacing)+keySpacing,(bganZ/2)+(keyZ/2)]) cube([(keyX*3)+(keySpacing*2), keyY+.1, keyZ], true);
