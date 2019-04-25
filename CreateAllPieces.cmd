@@ -3,6 +3,7 @@ SET version=v01
 
 mkdir %version%
 
+%oscad% -o %version%\sUAS_%version%.stl scad\sUAS.scad
 %oscad% -o %version%\SATCOLT_%version%.stl scad\SATCOLT.scad
 %oscad% -o %version%\VSAT_%version%.stl scad\VSAT.scad
 %oscad% -o %version%\RV_%version%.stl scad\RV.scad
