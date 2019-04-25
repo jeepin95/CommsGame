@@ -22,14 +22,14 @@ Unless otherwise noted supports should not be enabled.
 - [x] BGAN (x15)
 - [x] COW (x10)
 - [x] Satellite Phone (x30) - May require supports
-- [ ] Helicopter (x2)
+- [x] Helicopter (x2)
 - [x] Microwave Tower (x5)
 - [x] LMR Tower (x5)
 - [x] Satellite Cellular on Light Truck (x5)
-- [ ] VSAT (x12)
+- [x] VSAT (x12)
 - [x] RV (x10)
 - [x] Truck (x10)
 - [x] Radio Cache
-- [ ] sUAS
+- [x] sUAS
 
 ![alt Resource pieces sample image](images/resources.png)
