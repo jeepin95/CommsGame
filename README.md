@@ -21,8 +21,8 @@ Unless otherwise noted supports should not be enabled.
 # Resources
 - [x] BGAN (x15)
 - [x] COW (x10)
-- [x] Satellite Phone (x30) - May require supports
-- [x] Helicopter (x2)
+- [x] Satellite Phone (x30) - May require support for antenna
+- [x] Helicopter (x2) - Requires support for main rotor
 - [x] Microwave Tower (x5)
 - [x] LMR Tower (x5)
 - [x] Satellite Cellular on Light Truck (x5)
@@ -30,6 +30,6 @@ Unless otherwise noted supports should not be enabled.
 - [x] RV (x10)
 - [x] Truck (x10)
 - [x] Radio Cache
-- [x] sUAS
+- [x] sUAS - Requires support for wings
 
 ![alt Resource pieces sample image](images/resources.png)
