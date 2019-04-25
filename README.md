@@ -17,6 +17,7 @@ Unless otherwise noted supports should not be enabled.
 - [x] CO - Central Office (x1)
 - [x] MSC - Mobile Switching Center (x2)
 
+![alt Hex pieces sample image](images/hex.png)
 # Resources
 - [x] BGAN (x15)
 - [x] COW (x10)
@@ -30,3 +31,5 @@ Unless otherwise noted supports should not be enabled.
 - [x] Truck (x10)
 - [x] Radio Cache
 - [ ] sUAS
+
+![alt Resource pieces sample image](images/resources.png)
