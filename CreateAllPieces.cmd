@@ -4,6 +4,7 @@ SET version=v01
 mkdir %version%
 
 %oscad% -o %version%\SATCOLT_%version%.stl scad\SATCOLT.scad
+%oscad% -o %version%\VSAT_%version%.stl scad\VSAT.scad
 %oscad% -o %version%\RV_%version%.stl scad\RV.scad
 %oscad% -D "topLabel=\"M\"" -o %version%\Tower_Microwave_%version%.stl scad\Tower.scad
 %oscad% -D "topLabel=\"L\"" -o %version%\Tower_LMR_%version%.stl scad\Tower.scad
