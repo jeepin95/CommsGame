@@ -17,15 +17,19 @@ module keyRow() {
         }
     }
 }
-cube([bganX,bganY,bganZ], true);
-translate([0,(bganY/2),(bganY/2)-bganZ*1.5]) {
-    rotate([65,0,0]) {
-        cube([bganX,bganY*.75,bganZ], true);
+scale([1.2, 1.2, 1.2]) {
+    union() {
+        cube([bganX,bganY,bganZ], true);
+        translate([0,(bganY/1.5),(bganY/2)-bganZ*.5]) {
+            rotate([65,0,0]) {
+                cube([bganX,bganY,bganZ], true);
+            }
+        }
+        for(j=[1:5]) {
+            translate([0,keyStartingY+(j*(-(keyY+keySpacing))),0]) {
+                keyRow();
+            }
+        }
+        #translate([keyX/2-keySpacing,-3*(keyY+keySpacing)+keySpacing,(bganZ/2)+(keyZ/2)]) cube([(keyX*3)+(keySpacing*2), keyY+.1, keyZ], true);
     }
 }
-for(j=[1:5]) {
-    translate([0,keyStartingY+(j*(-(keyY+keySpacing))),0]) {
-        keyRow();
-    }
-}
-#translate([keyX/2-keySpacing,-3*(keyY+keySpacing)+keySpacing,(bganZ/2)+(keyZ/2)]) cube([(keyX*3)+(keySpacing*2), keyY+.1, keyZ], true);
