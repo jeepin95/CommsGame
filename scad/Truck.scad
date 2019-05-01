@@ -62,26 +62,32 @@ CabSideFaces = [
   [6,7,3,2],  // back
   [7,4,0,3]]; // left
 
+scale([1.5,1.5,2]) {
+    union() {
+        difference() {
+            truckCab();
+            polyhedron(CabSidePoints, CabSideFaces);
+            polyhedron(CabLeftSidePoints, CabSideFaces);
+        }
 
+        difference() {
+            translate([0, 12, 0]) cube([14,10,5]);
+            translate([1.5, 12, 1.5]) cube([11,8.5,5]);
+        }
 
+        $fn = 60;
+        difference() {
+            wheels();
+            translate([-4,0,-10]) cube([20,20,10]);
+        }
+    }
+}
 module truckCab() {
     polyhedron( HoodPoints, HoodFaces );
     polyhedron(CabPoints, CabFaces);
     translate([0, 7, 0]) cube([14,5,8]);
 }
 
-difference() {
-    truckCab();
-    polyhedron(CabSidePoints, CabSideFaces);
-    polyhedron(CabLeftSidePoints, CabSideFaces);
-}
-
-difference() {
-    translate([0, 12, 0]) cube([14,10,5]);
-    translate([1.5, 12, 1.5]) cube([11,8.5,5]);
-}
-
-$fn = 60;
 module wheels() {
     translate([-1.5, 17, 0]) rotate([0,90,0]) cylinder(r=2, h=3);
     translate([12.5, 17, 0]) rotate([0,90,0]) cylinder(r=2, h=3);
@@ -90,7 +96,3 @@ module wheels() {
     translate([12, 4, 0]) rotate([0,90,0]) cylinder(r=2, h=3);
 }
 
-difference() {
-    wheels();
-    translate([-4,0,-10]) cube([20,20,10]);
-}
