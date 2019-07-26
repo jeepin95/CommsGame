@@ -14,11 +14,11 @@ module dish() {
     }
     translate([0,0,1]) cylinder(r1=2, r2=.2, h=3);
 }
-translate([0,0,-5]) cube([baseX, baseY, baseZ], true);
+translate([0,0,-3]) LegoBase(); //cube([baseX, baseY, baseZ], true);
 difference() { 
     cube([baseX/2, baseY/2, 8], true);
     rotate([0,30,0]) translate([0,0,dishR]) sphere(r=dishR-1.2); 
 }
 
 rotate([0,30,0]) dish();
-LegoBase();
+//LegoBase();
