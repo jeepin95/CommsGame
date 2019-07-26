@@ -1,5 +1,5 @@
 SET oscad="c:\Program Files\OpenSCAD\openscad.exe" 
-SET version=v02
+SET version=v03
 
 mkdir %version%
 
@@ -20,7 +20,7 @@ mkdir %version%
 
 
 SET oscad = ..
-
+goto skip
 %oscad% -D "LABEL=\"AIR\"" -o %version%\HexPiece_%version%_AIR.stl scad\HexPieces.scad
 %oscad% -D "LABEL=\"CELL\"" -o %version%\HexPiece_%version%_CELL.stl scad\HexPieces.scad
 %oscad% -D "LABEL=\"LMR\"" -o %version%\HexPiece_%version%_LMR.stl scad\HexPieces.scad
@@ -32,3 +32,4 @@ SET oscad = ..
 %oscad% -D "LABEL=\"PSAP\"" -o %version%\HexPiece_%version%_PSAP.stl scad\HexPieces.scad
 %oscad% -D "LABEL=\"CO\"" -o %version%\HexPiece_%version%_CO.stl scad\HexPieces.scad
 %oscad% -D "LABEL=\"MSC\"" -o %version%\HexPiece_%version%_MSC.stl scad\HexPieces.scad
+:skip
