@@ -1,5 +1,6 @@
 
 include <module_RV.scad>
+include <LegoBase.scad>
 
 dishR = 10;
 
@@ -16,3 +17,4 @@ module dish() {
 
 RV(false);
 translate([(12/2)-(4/2),20,11]) dish();
+translate([5,20,0]) LegoBase();

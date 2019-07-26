@@ -1,3 +1,4 @@
+include <LegoBase.scad>
 topLabel = "L";
 towerBaseX = 16;
 towerBaseY = 16;
@@ -12,7 +13,7 @@ echo(segZ);
 fontHeight = 10;
 
 
-cube([towerBaseX, towerBaseY, towerBaseZ], center=true);
+//cube([towerBaseX, towerBaseY, towerBaseZ], center=true);
 
 translate([0,0,towerZ]) {
     cube([towerX, towerY, towerPosts], center=true);
@@ -97,3 +98,4 @@ module towerHorizontal() {
         cube([towerPosts, towerY, towerPosts], center=true);
     }
 }
+LegoBase();

@@ -1,3 +1,4 @@
+include <LegoBase.scad>
 dishR = 15;
 baseX = 16;
 baseY = 16;
@@ -20,3 +21,4 @@ difference() {
 }
 
 rotate([0,30,0]) dish();
+LegoBase();

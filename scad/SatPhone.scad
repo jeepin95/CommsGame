@@ -1,3 +1,4 @@
+include <LegoBase.scad>
 baseX = 16;
 baseY = 16;
 baseZ = 3;
@@ -26,3 +27,5 @@ scale([1.5,1.5,1.5]) {
         cube([baseX, baseY, baseZ], center=true);
     }
 }
+translate([0,0,-2])
+LegoBase();

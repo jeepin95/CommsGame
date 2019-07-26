@@ -1,3 +1,4 @@
+include <LegoBase.scad>
 bladeX=4;
 bladeY=30;
 bladeZ=2.2;
@@ -34,3 +35,4 @@ difference() {
     helo();
     translate([0,0,-(bladeY-5)]) cube([bladeY, bladeY*3, bladeY], true); // Remove bottom half
 }
+translate([0,0,-(bladeY/2)+5]) LegoBase();

@@ -1,4 +1,4 @@
-
+include <LegoBase.scad>
 bganX = 22;
 bganY = 14;
 bganZ = 1.5;
@@ -33,3 +33,6 @@ scale([1.2, 1.2, 1.2]) {
         #translate([keyX/2-keySpacing,-3*(keyY+keySpacing)+keySpacing,(bganZ/2)+(keyZ/2)]) cube([(keyX*3)+(keySpacing*2), keyY+.1, keyZ], true);
     }
 }
+
+
+LegoBase();

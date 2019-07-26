@@ -1,3 +1,4 @@
+include <LegoBase.scad>
 wingX = 30;
 wingY = 7;
 wingZ = 2;
@@ -52,3 +53,5 @@ VertPoints = [
   [ 1,  33,  6 ],  //5
   [ 1,  36,  6 ],  //6
   [  -1,  36,  6 ]]; //7
+
+  translate([0,10,-3.9]) LegoBase();

@@ -96,3 +96,5 @@ module wheels() {
     translate([12, 4, 0]) rotate([0,90,0]) cylinder(r=2, h=3);
 }
 
+include <LegoBase.scad>
+translate([10,17,0]) LegoBase();

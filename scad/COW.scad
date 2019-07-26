@@ -1,4 +1,4 @@
-
+include <LegoBase.scad>
 trailerY = 21;
 trailerX = 12;
 trailerZ = 7;
@@ -125,3 +125,5 @@ module roundedcube(size = [1, 1, 1], center = false, radius = 0.5, apply_to = "a
 		}
 	}
 }
+
+translate([0,0,-3]) LegoBase();

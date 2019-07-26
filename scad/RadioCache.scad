@@ -1,3 +1,4 @@
+include <LegoBase.scad>
 boxWidth = 25;
 boxDepth = 15;
 boxHeight = 15;
@@ -79,3 +80,4 @@ module roundedcube(size = [1, 1, 1], center = false, radius = 0.5, apply_to = "a
 		}
 	}
 }
+translate([0,0,-(boxHeight/2)]) LegoBase();
