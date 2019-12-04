@@ -18,7 +18,7 @@ echo("Top Angle: ", topAngle);
 echo("Phone Height: ", phoneHeight);
 echo("Phone Offset: ", phoneOffset);
 
-scale([1.5,1.5,1.5]) {
+scale([1.25,1.25,1.25]) {
     union() {
         translate([0,0,(phoneX/2)-baseZ/2]) rotate([0,phoneTilt,0]) cube([phoneX, phoneY, phoneZ], center=true);
 
