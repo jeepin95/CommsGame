@@ -1,5 +1,5 @@
 SET oscad="c:\Program Files\OpenSCAD\openscad.exe" 
-SET version=v04
+SET version=v05
 
 mkdir %version%
 
