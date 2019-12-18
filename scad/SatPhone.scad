@@ -18,7 +18,7 @@ echo("Top Angle: ", topAngle);
 echo("Phone Height: ", phoneHeight);
 echo("Phone Offset: ", phoneOffset);
 
-scale([1.25,1.25,1.25]) {
+scale([1.0,1.0,1.0]) {
     union() {
         translate([0,0,(phoneX/2)-baseZ/2]) rotate([0,phoneTilt,0]) cube([phoneX, phoneY, phoneZ], center=true);
 
@@ -27,5 +27,5 @@ scale([1.25,1.25,1.25]) {
         cube([baseX, baseY, baseZ], center=true);
     }
 }
-translate([0,0,-2])
+translate([0,0,-1.1])
 LegoBase();
